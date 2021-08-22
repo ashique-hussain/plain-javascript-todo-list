@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plain JavaScript todo list</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="myDIV" class="header">
+            <h2 class='title'>My ToDo List</h2>
+            <form onsubmit="onSubmit(event)">
+                <input type="text" id="myInput" placeholder="Add Todo...">
+                <span onclick="AddnewElement()" class="addBtn">Add New</span>
+            </form>
+        </div>
+        <span id="empty-todo">No todo list found</span>
+        <ul id="todo-list">
+        </ul>
+    </div>
+    <button type="button" id="clear-list" onclick="removeAll()">Clear Todo Lists</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
